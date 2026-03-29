@@ -10,7 +10,8 @@ jobs:
       - name: Checkout Repo
         uses: actions/checkout@v3
 
-
       - name: Run Feed Generator
         uses: saimanvith22/podcast-generator@main
+        with:
+          feed_yaml_path: ${{ github.workspace }}/feed.yaml
 
